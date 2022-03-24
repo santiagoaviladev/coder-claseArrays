@@ -1,5 +1,34 @@
 <script>
     const numeros = [1,1,3,5,8,13,21];
     
+    let opcion ="";
+    while(opcion!=="FIN")
+    {
+        opcion = prompt(`Seleccione una opción
+                          1. Ingresar Números
+                          2. FIN`);
+        if(opcion!=="FIN")
+        {
+            let num = parseInt(prompt(`Ingrese un número`));
+            numeros.push(num);
+        } 
+    }
+    console.log(numeros);
+
+
+    const numeros2 = [1,1,3,5,8,13,21];
+    let opcion2 ="";
+    while(opcion2!=="FIN")
+    {
+        opcion2 = prompt(`Seleccione una opción
+                          1. Ingresar Números
+                          2. FIN`);
+        if(opcion2!=="FIN")
+        {
+            let num = parseInt(prompt(`Ingrese un número`));
+            numeros2.unshift(num);
+        } 
+    }
+    console.log(numeros2);
 
 </script>
